@@ -6,6 +6,7 @@ Scripts et travaux pour le cours BVG-7003 - Analyses des informations génomique
 
 ## Dossier : fast-gbs
 *Dossier contenant des fichiers remis lors de la semaine 3.*
+
 Scripts permettant d'exécuter le pipeline Fast-GBS (voir https://bitbucket.org/jerlar73/fast-gbs/wiki/Home) conçu pour l'extraction de SNPs. 
 
 Les grandes étapes d'exécution sont : 
@@ -23,6 +24,7 @@ Les grandes étapes d'exécution sont :
 
 ## Dossier : variant_calling
 *Dossier contenant des fichiers remis lors de la semaine 9.* 
+
 Scripts permettant l'appel de variants à partir d'un jeu de données fourni (fichier FASTQ et fichier de code-barres; voir https://bitbucket.org/jerlar73/soyagen-bioinformatics-workshop-1/src/master/exercise1/) et d'un génome de référence fourni (Gmax_275_v2.0.fa; voir https://phytozome-next.jgi.doe.gov/info/Gmax_Wm82_a2_v1).
 
 Les grandes étapes d'exécution sont :
