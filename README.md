@@ -34,3 +34,26 @@ Les grandes étapes d'exécution sont :
 - Alignement des séquences au génome de référence avec BWA-MEM `mapping.sh`
 - Conversion des fichiers d'alignement SAM en fichiers BAM (`sam2bam.sh`)
 - Appel de variants avec BCFtools (`samt_var.sh`)
+
+## Dossier : GWAS_visualisation
+*Dossier contenant des fichiers remis lors de la semaine 11.*
+
+Scripts permettant la visualisation des données issues de l'analyse GWAS à l'aide de deux packages R : GABIT et rMVP. Les fichiers de données `geno.hmp.txt` et `pheno.txt` sont utilisés dans les deux cas.
+
+Pour le package GABIT, les grandes étapes d'exécution sont : 
+
+- Installation du package et chargement des données
+- Vérification de la qualité des données
+- Analyse sans compression du modèle (résultats dans le sous-dossier *No-compression*)
+- Analyse avec compression du modèle (résultats dans le sous-dossier *with-compression*)
+- Analyse avec modifications des paramètres de *kinship* (résultats dans le sous-dossier *parameters*)
+- Analyse avec un modèle multi-locus mixte (résultats dans le sous-dossier *MLMM*)
+- Analyse avec un *Fixed and random model Circulating Probability Unification* (résultats dans le sous-dossier *FarmCPU*)
+
+Pour le package rMVP, les grandes étapes d'exécution sont : 
+
+- Installation du package
+- Chargement des données génotypiques et phénotypiques et création des fichiers `.bin`, `.desc`, `.ind`, `.map` et `.phe` nécessaires
+- Chargement des fichiers créés par le package
+- Analyse GWAS réalisée à l'aide du boucle `for` générant les résultats sous la forme de fichiers `.csv` et `.jpg`
+
