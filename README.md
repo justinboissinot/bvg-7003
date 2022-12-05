@@ -38,7 +38,9 @@ Les grandes étapes d'exécution sont :
 ## Dossier : GWAS_visualisation
 *Dossier contenant des fichiers remis lors de la semaine 11.*
 
-Scripts permettant la visualisation des données issues de l'analyse GWAS à l'aide de deux packages R : GABIT et rMVP. Les fichiers de données `geno.hmp.txt` et `pheno.txt` sont utilisés dans les deux cas.
+Scripts permettant la visualisation des données issues de l'analyse GWAS à l'aide de deux packages R : GABIT et rMVP. 
+
+**IMPORTANT :** Deux fichiers d'entrée `geno.hmp` sont utilisés à cause d'un problème rencontré lors de l'analyse avec le fichier originallement fourni. `geno.hmp.gapit.txt` représente le fichier d'origine. La seule différence chez `geno.hmp.rmvp.txt` est l'ajout d'un `#` après le premier mot de la première ligne (`rs` devient `rs#`) afin de satisfaire l'exigence de la librairie R `rMVP`.
 
 Pour le package GABIT, les grandes étapes d'exécution sont : 
 
